@@ -1,0 +1,245 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body, p {
+	font-family: "Poppins", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.75em;
+	color: #d5d5d5;
+	background-color: rgb(47, 45, 45);
+	
+}
+
+body{
+	animation-duration: 2s;
+	animation-timing-function:linear;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-name: intro;
+}
+
+@keyframes intro{
+	0%{opacity: 0 ;}
+	50%{opacity: 50% ;}
+	100%{opacity: 100%; }
+}
+
+
+li{
+	display: inline-block;
+	margin: 2%;
+	float: right;
+	background-color: transparent;
+	color:rgb(129, 117, 117);
+}
+header{
+	position:sticky;
+    top: 0%;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: 1s;
+	background-color: transparent;
+	width:100%;
+}
+
+header a{
+	
+	   border-radius: 25%;
+		color:rgb(180, 172, 172);
+		text-decoration: none;
+		transition: color 1s,font-size 1s,box-shadow 1s;
+}
+
+header a:hover{
+   
+	color:rgb(245, 244, 244);
+	font-size: 20px;
+	
+}
+
+h1{
+	line-height: 1.7;
+	
+}
+h2{
+	display: inline-block;
+	margin-top:2% ;
+	margin-left: 30px;
+}
+button{
+    font-size: 20px;
+	border-radius: 50px;
+	color: rgb(221, 37, 20);
+	background-color:transparent;
+	border-color: rgb(177, 81, 52);
+	margin: 0%;
+	width: 100%;
+	padding: 10px;
+   border-width: 3px;
+	transition:color 1s ;
+
+
+}
+button:hover{
+	color: rgb(238, 222, 47);
+	cursor: pointer;
+
+}
+.main{
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 50% 40%;
+	gap: 10%;
+	
+}
+.mainl{
+	margin-left: 5%;
+	display: inline-flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+
+.course{
+   
+	width: 90%;
+	height: 10%;
+	display: grid;
+	grid-template-columns: auto auto auto ;
+
+	background-color:rgb(47, 45, 45);
+	
+	gap:5%;
+	
+	margin-right: 5%;
+	margin-left: 5%;
+
+	
+}
+
+.course img{
+	margin: 2%;
+	width: 90%;
+	height: 80%;
+}
+.i{
+	width: 450px;
+	height: 300px;
+	cursor: pointer;
+}
+.coursebackgroundcolor{
+	background-color: transparent;
+	transition: box-shadow 2s;
+
+}
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.leftside{
+    display: inline-block;
+	position: absolute;
+	top: 300%;
+	margin-left: 2%;
+
+}
+.rightside{
+	float: right;
+	display: inline-block;
+	margin-right: 2%;
+	
+}
+.course .slide{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: 220px;
+	color: rgb(248, 14, 14);
+	font-weight: bold;
+	
+}
+/* .coursebackgroundcolor:hover{
+	box-shadow: 4px 4px 4px 4px white;
+} */
+
+.coursebackgroundcolor:hover{
+   
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+}
+.stu{
+
+	width: 90%;
+	height: 10%;
+	display: grid;
+	grid-template-columns: auto auto auto ;
+
+	background-color:rgb(47, 45, 45);
+	
+	gap:5%;
+	
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 2%;
+	
+	
+}
+.stubackgroundcolor{
+	background-color: black;
+	padding: 10%;
+	border-radius: 50px;
+}
+
+
+.footer {
+	background-color:#79795c;
+	color: #f6f4f7;
+	padding: 10px;
+	margin-bottom: 0%;    
+	
+	     
+}
+
+.footer a {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+.footer p {
+	margin: 0%;
+	background-color: transparent;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+   justify-content: space-around;
+   text-align: center;
+   
+	
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.main,.stu,.course{
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 5px;
+		
+		
+		
+	   
+	}
+
+}
+
+	  

@@ -1,0 +1,134 @@
+.box{
+	
+    background-color: white;
+    color:rgb(239, 96, 96);
+    top: 12%;
+    left: 35%;
+    position: absolute;    
+    width: 25%;
+    padding: 10px 60px;
+    line-height: 1.6cm;
+    border-radius: 20px;
+ 
+
+}
+
+body{
+    background-color: rgb(119, 147, 147);
+background-size: cover;
+background-repeat: no-repeat;
+    
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  
+}
+
+a:active 
+{
+  color: yellow;
+  background-color: transparent;
+  }
+
+button
+{
+
+    height: 30px;
+    width:100px;
+    background:#4ea6ba;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 40px;
+    outline: "none";
+
+
+    
+}
+
+button:hover
+{
+    background-color: #0b728a;
+    cursor:pointer;
+
+}
+
+button:active
+{
+    background-color: #0b728a;
+    cursor:not-allowed;
+
+}
+
+
+input[type="Email"],input[type="password"],input[type="text"]
+{
+    border: none;
+    background: transparent;
+   
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    transition: border-bottom 1s
+
+
+}
+
+input[type="Email"]:hover,input[type="password"]:hover
+{
+       border-bottom:3px solid rgb(5, 5, 7) ;
+
+}
+
+.emailico{
+    
+   position: absolute;
+   right: 60px;
+   top: 192px;
+   color: black;
+}
+
+#eyeicon{
+    
+   position: absolute;
+   right: 60px;
+   top: 290px;
+   color: black;
+   border: none;
+   background: transparent;
+
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

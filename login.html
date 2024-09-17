@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> login page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="login.css">
+ </head>
+<body>
+ <div class="box">
+	<form action="./home.html">
+   
+    <h1 style="text-align: center; color: black;">Login Here</h1>   
+    
+  	<label><b>Email:</b></label>
+ <br> 
+    <input type="Email" name="email" placeholder="enter email" required> 
+<br>
+    <ion-icon name="mail" class="emailico"></ion-icon>
+
+  	<label><b>Password:</b></label>
+    <br>
+
+  	<input type="password" name="pws"  placeholder="enter password" id="inputpassword" required>
+
+
+   <ion-icon name="eye" id="eyeicon" onclick="pass()" ></ion-icon>
+  	<br><br>
+    <a href="home.html"><center><button>Login</button></center></a>
+   
+   <a href="register.html" style="color: black;"> create account.</a>
+ </form>
+   </div>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+<script>
+
+let x =document.querySelector("#inputpassword");
+
+function pass(){
+  if(x.type=="password"){
+        x.type="text";
+}
+
+else{
+  x.type="password";
+}
+
+  
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="login.js"></script>
+
+
+
+</body>
